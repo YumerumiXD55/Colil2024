@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo gris claro del círculo completo -->
+    <item android:id="@android:id/background">
+        <shape android:shape="ring"
+            android:innerRadiusRatio="3"
+            android:thicknessRatio="8"
+            android:useLevel="false">
+            <solid android:color="#D3D3D3"/> <!-- Color de fondo de la barra -->
+        </shape>
+    </item>
+
+    <!-- Barra de progreso en azul -->
+    <item android:id="@android:id/progress">
+        <shape android:shape="ring"
+            android:innerRadiusRatio="3"
+            android:thicknessRatio="8"
+            android:useLevel="true">
+            <solid android:color="#2196F3"/> <!-- Color de progreso -->
+        </shape>
+    </item>
+</layer-list>

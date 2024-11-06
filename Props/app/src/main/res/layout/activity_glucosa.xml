@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4E8F3"
+    tools:context=".GlucosaActivity">
+
+    <RelativeLayout
+        android:id="@+id/menuButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="640dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:background="@drawable/rutina_curves"
+            android:backgroundTint="#39333D"
+            android:padding="5dp"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rutina_curves"
+            android:backgroundTint="#39333D"
+            android:padding="5dp"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rutina_curves"
+            android:backgroundTint="#39333D"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_glucosa"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="572dp"
+        android:text="Registro de nivel de glucosa (mg/dL)"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/agregar"
+        android:layout_width="101dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="562dp"
+        android:background="@drawable/button_mas"
+        android:contentDescription="Botón con imagen"
+        android:scaleType="centerInside"
+        android:src="@drawable/image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="434dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="217dp"
+        android:background="#E8D1E7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/date_table1">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="19dp"
+                android:text="DD/MM/YYYY"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="25dp"
+            android:text=" nivel de glucosa (mg/dL)"
+            android:textColor="#AA6699"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="457dp"
+        android:background="@drawable/table_arriba"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/date_table2">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="19dp"
+                android:text="DD/MM/YYYY"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="25dp"
+            android:text=" nivel de glucosa (mg/dL)"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="377dp"
+        android:background="#E8D1E7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/date_table1">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="19dp"
+                android:text="DD/MM/YYYY"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="25dp"
+            android:text=" nivel de glucosa (mg/dL)"
+            android:textColor="#AA6699"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="297dp"
+        android:background="#AA6699"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/date_table2">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="19dp"
+                android:text="DD/MM/YYYY"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="25dp"
+            android:text=" nivel de glucosa (mg/dL)"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="594dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/table_abajo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/date_table1">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="19dp"
+                android:text="DD/MM/YYYY"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="25dp"
+            android:text=" nivel de glucosa (mg/dL)"
+            android:textColor="#AA6699"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="514dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="137dp"
+        android:background="#AA6699"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/date_table2">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="19dp"
+                android:text="DD/MM/YYYY"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="25dp"
+            android:text=" nivel de glucosa (mg/dL)"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

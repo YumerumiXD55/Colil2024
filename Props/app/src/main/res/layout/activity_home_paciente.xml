@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homePaciente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4E8F3"
+    tools:context=".HomePacienteActivity">
+
+    <RelativeLayout
+        android:id="@+id/menuButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="640dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:background="@drawable/rutina_curves"
+            android:backgroundTint="#39333D"
+            android:padding="5dp"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rutina_curves"
+            android:backgroundTint="#39333D"
+            android:padding="5dp"/>
+        <View
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rutina_curves"
+            android:backgroundTint="#39333D"
+            android:padding="5dp"/>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="339dp"
+        android:background="@drawable/grafic_curves"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/textGrafic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Metas realizadas"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <ProgressBar
+            android:id="@+id/progressCircle"
+            android:layout_width="185dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/textGrafic"
+            android:layout_marginTop="32dp"
+            android:indeterminate="false"
+            android:progress="0"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:rotation="270" />
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="125dp"
+            android:text="0%"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/progressCircle"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="13dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="200dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="34dp"
+            android:text="Realizar 45 minutos de actividad física al día."
+            android:textColor="#000000"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="90dp"
+            android:text="Completar 150 minutos de actividad física moderada por semana."
+            android:textColor="#000000"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="146dp"
+            android:text="Realizar ejercicios de fuerza 2 veces por semana"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="200dp"
+            android:text="Seguir plan alimentario durante la semana"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="483dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="178dp"
+        android:background="#025377"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_segu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:text="Registro actividad fisica"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <RelativeLayout
+            android:id="@+id/button_rutina"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/buttom_circles">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/circle_shape" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/circle_shape" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="47dp"
+                android:background="@drawable/circle_shape" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="623dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/curves_layout_abajo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_cuart"
+            android:layout_width="195dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:text="Calculador de tasa filtrador glomerular"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <RelativeLayout
+            android:id="@+id/button_tfg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/buttom_circles">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/circle_shape" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/circle_shape" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="47dp"
+                android:background="@drawable/circle_shape" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="248dp"
+        android:background="@drawable/curves_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_princi"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Registro de nivel de glucosa"
+
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <RelativeLayout
+            android:id="@+id/button_glucosa"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/buttom_circles">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/circle_shape" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/circle_shape" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="47dp"
+                android:background="@drawable/circle_shape" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="553dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="108dp"
+        android:background="#4AB79A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_terce"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Plan alimentario"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <RelativeLayout
+            android:id="@+id/button_minuta"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/buttom_circles">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/circle_shape" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/circle_shape" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="47dp"
+                android:background="@drawable/circle_shape" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
